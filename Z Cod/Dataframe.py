@@ -57,7 +57,7 @@ class MainWindow(QMainWindow):
             }
 
             # DF 'productos', sacados de la web
-            productos = pd.read_csv("Relaciones/cafe.csv", sep=";")
+            productos = pd.read_csv("Z cod/cafe.csv", sep=";")
             # Calcular similitud entre respuestas del usuario y productos
             similitud = calcular_similitud(respuestas_usuario, productos, pesos)
             # Ordenar productos por similitud descendente, pero ordena sin mas
