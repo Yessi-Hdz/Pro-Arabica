@@ -54,3 +54,4 @@ class ModPasswordVentana(QMainWindow):
         
     def salir(self):
         self.close()
+        self.usuario_manager.guardar_cambios_en_db() #Al final esta es la linea que me faltaba
